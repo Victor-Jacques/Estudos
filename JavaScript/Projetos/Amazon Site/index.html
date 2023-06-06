@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="./styles/style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <section id="sectionA">
+      <div id="topOffA">
+        <img id="topLogo" src="./styles/png-transparent-amazon-dark-hd-logo.png" width="180"        height="100"></img>
+      <input type="text" class="searchBar" placeholder="Search..."><button id="searchButton" type="submit"><img src="" alt=""><img src="styles/search-512.webp" width="25" height="20"></button>
+      
+    
+    </div>
+    <div class="topNav">
+      <a class="active" href="#CeC">Celulares e Comunicação</a>
+      <a href="#CeI">Computadores e Informática</a>
+      <a href="#AeCI">Alexa e Casa Inteligente</a>
+      <a href="#PG">Pc Gamer</a>
+    </div>
+
+  </section>
+  <button onclick="console.log(`Cart quantity: ${cartQuantity}`);">Cart Quantity</button>
+
+  <button onclick="cartQuantity += 1;
+    console.log(`Cart quantity: ${cartQuantity}`);
+  ">Add to Cart</button>
+  
+  <button onclick="cartQuantity += 2;
+  console.log(`Cart quantity: ${cartQuantity}`);">+2</button>
+  
+  <button onclick="cartQuantity += 3;
+  console.log(`Cart quantity: ${cartQuantity}`);">+3</button>
+  
+  <button onclick="cartQuantity = 0;
+  console.log('Cart was reset.');
+  console.log(`Cart quantity: ${cartQuantity}`);">Reset Cart</button>
+
+
+
+
+  <script src="index.js">
+    let cartQuantity = 0;
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+body {
+    background-image: url(0afdf4c379a1d768f8fbf23766d30365.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+form {
+    background-color: rgb(174, 255, 187);
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 400px;
+    flex-direction: flex;
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#getTemperature {
+    padding: 6px;
+    border-radius: 5px;
+}
+
+#result {
+    flex-direction: flex;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#celsius {
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 20%;
+    margin-top: 0.5%;
+    border-radius: 10px;
+    box-shadow: 0 0 0.1vw 0.1vw #138d3c;
+}
+
+
+#farh {
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 0.1vw 0.1vw #138d3c;
+}

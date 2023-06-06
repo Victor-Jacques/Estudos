@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(253, 226, 255);
+}
+
+#target {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+    line-height: 430px;
+}
+
+#main {
+    background-image: url("love-heart.gif");
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+#n1 {
+    margin-left: 100px;
+   margin-right: 700px;
+}
+
+#n2 {
+    
+}
+
+#section h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;
+    flex-direction: column; 
+}

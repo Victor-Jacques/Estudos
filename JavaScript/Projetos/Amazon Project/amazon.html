@@ -56,6 +56,9 @@
       </div>
     </div>
 
+       <!--The order here matters, if it was reversed, then the code wouldn't work, because script elements are loaded one by one, so first the products script should be loaded and then the functions scripts-->
+
+    <script src="data/cart.js"></script>
     <script src="data/products.js"></script>
     <script src="scripts/amazon.js"></script>
   </body>

@@ -24,11 +24,6 @@ function calculateNum(){
 
 
 
-
-
-
-
-
 /*function multiplyBy()
 {
     num1 = document.getElementById("firstNumber").value;

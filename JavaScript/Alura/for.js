@@ -1,5 +1,5 @@
-const numbers = [100, 200, 300, 400, 500, 600];
+const notas = [100, 200, 300, 400, 500, 600, 700, 800];
 
-for (let i=0; i<numbers.length; i++) {
-    console.log(numbers[i]);
+for (let i=0; i<notas.length; i++) {
+    console.log(notas[i]);
 }

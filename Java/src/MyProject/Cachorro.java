@@ -1,5 +1,10 @@
-public class Cachorro {
-    public static void main(String[] args){
+package MyProject;
 
-    }
+public class Cachorro {
+        int tamanho;
+        String raça;
+
+        void latir(){
+            System.out.println("Au,au,au,au!!!");
+        }
 }

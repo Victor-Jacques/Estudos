@@ -16,7 +16,13 @@ public class BankAccount {
         System.out.printf("Saldo inicial: R$ %.2f \n", saldoCliente1);
         System.out.println("************************");
 
-
+        System.out.println(" Operações \n");
+        System.out.println("1- Consultar saldos");
+        System.out.println("2- Receber valor");
+        System.out.println("3- Transferir valor");
+        System.out.println("4- Sair \n");
+        System.out.println("Digite a opção desejada: ");
+        int operacoes = scan.nextInt();
 
             while (operacoes != 4) {
 

@@ -27,15 +27,13 @@ public class BankAccount {
             System.out.println("Digite a opção desejada: ");
             operacoes = scan.nextInt();
 
-            switch (operacoes) {
-                case 1:
-                    System.out.printf("O saldo da conta é de: R$ %.2f \n", saldoCliente1);
-
-                case 2:
-                    System.out.println("Insira quanto irá receber: \n");
-                    float recebeValor = scan.nextFloat();
-                    saldoCliente1 += recebeValor;
-                    System.out.printf("O novo saldo é de: R$ %.2f", saldoCliente1);
+            if (operacoes == 1) {
+                System.out.printf("O saldo da conta é de: R$ %.2f", saldoCliente1);
+            } else if (operacoes == 2) {
+                System.out.println("Insira o valor à receber: ");
+                float recebeValor = scan.nextFloat();
+                saldoCliente1 += recebeValor;
+                System.out.printf("O novo saldo da conta é de: R$ %.2f", saldoCliente1);
             }
         }
     }

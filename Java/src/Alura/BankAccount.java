@@ -7,7 +7,8 @@ public class BankAccount {
         Scanner scan = new Scanner(System.in);
         String cliente1 = "Joana Jackson";
         String tipoDeConta = "Corrente";
-        double saldoCliente1 = 2500;
+        float saldoCliente1 = 2500;
+        int operacoes = 0;
 
         System.out.println("************************");
         System.out.println("Dados iniciais do cliente: \n");
@@ -16,27 +17,26 @@ public class BankAccount {
         System.out.printf("Saldo inicial: R$ %.2f \n", saldoCliente1);
         System.out.println("************************");
 
+        while (operacoes != 4) {
 
-        System.out.println(" Operações \n");
-        System.out.println("1- Consultar saldos");
-        System.out.println("2- Receber valor");
-        System.out.println("3- Transferir valor");
-        System.out.println("4- Sair \n");
-        System.out.println("Digite a opção desejada: ");
-        int operacoes = scan.nextInt();
+            System.out.println("\n Operações");
+            System.out.println("1- Consultar saldos");
+            System.out.println("2- Receber valor");
+            System.out.println("3- Transferir valor");
+            System.out.println("4- Sair \n");
+            System.out.println("Digite a opção desejada: ");
+            operacoes = scan.nextInt();
 
-            while (operacoes != 4) {
+            switch (operacoes) {
+                case 1:
+                    System.out.printf("O saldo da conta é de: R$ %.2f \n", saldoCliente1);
 
-                if (operacoes == 1) {
-                    System.out.printf("O saldo da conta é: R$ %.2f", saldoCliente1);
-                    break;
-                } else if (operacoes == 2) {
-                    System.out.printf("Qual valor à receber ? ");
-                    double recebeValor = scan.nextInt();
-                    double novoSaldo = recebeValor + saldoCliente1;
-                    System.out.printf("Novo saldo é de: R$ %.2f", novoSaldo);
-                    break;
-                }
+                case 2:
+                    System.out.println("Insira quanto irá receber: \n");
+                    float recebeValor = scan.nextFloat();
+                    saldoCliente1 += recebeValor;
+                    System.out.printf("O novo saldo é de: R$ %.2f", saldoCliente1);
             }
         }
     }
+}

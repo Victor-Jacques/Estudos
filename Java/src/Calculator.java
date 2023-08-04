@@ -12,7 +12,7 @@ public class Calculator {
         double num2 = scan.nextDouble();
         scan.nextLine();
 
-        System.out.print("What operation do you want to perform: ");
+        System.out.print("Which operation do you want to perform: ");
         String operation = scan.nextLine();
 
         switch(operation){

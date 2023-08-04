@@ -16,6 +16,7 @@ public class BankAccount {
         System.out.printf("Saldo inicial: R$ %.2f \n", saldoCliente1);
         System.out.println("************************");
 
+
         System.out.println(" Operações \n");
         System.out.println("1- Consultar saldos");
         System.out.println("2- Receber valor");
@@ -26,17 +27,16 @@ public class BankAccount {
 
             while (operacoes != 4) {
 
-                switch (operacoes) {
-                    case 1:
-                        System.out.printf("O saldo da conta é R$ %.2f", saldoCliente1);
-
-                    case 2:
-                        System.out.println("Insira a quantia que irá receber: ");
-                        double quantiaReceber = scan.nextInt();
-                        double saldoNovo = quantiaReceber + saldoCliente1;
-                        System.out.printf("Seu novo saldo é: R$ %.2f", saldoNovo);
+                if (operacoes == 1) {
+                    System.out.printf("O saldo da conta é: R$ %.2f", saldoCliente1);
+                    break;
+                } else if (operacoes == 2) {
+                    System.out.printf("Qual valor à receber ? ");
+                    double recebeValor = scan.nextInt();
+                    double novoSaldo = recebeValor + saldoCliente1;
+                    System.out.printf("Novo saldo é de: R$ %.2f", novoSaldo);
+                    break;
                 }
-
+            }
         }
     }
-}

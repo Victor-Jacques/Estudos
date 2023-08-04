@@ -45,6 +45,8 @@ public class BankAccount {
                 }
             } else if (operacoes == 4) {
                 System.out.println("Saindo do sistema.");
+            } else if (operacoes != 4) {
+                System.out.println("Opção invalida.");
             }
         }
     }

@@ -1,2 +1,5 @@
-package Alura.Screenmatch.calculos;public class Classificavel {
+package Alura.Screenmatch.calculos;
+
+public interface Classificavel {
+    int getClassificacao();
 }

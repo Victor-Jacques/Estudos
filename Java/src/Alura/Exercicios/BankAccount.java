@@ -1,4 +1,4 @@
-package Alura;
+package Alura.Exercicios;
 
 import java.util.Scanner;
 

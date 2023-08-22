@@ -1,4 +1,4 @@
-package Alura.Screenmatch;
+package Alura.Screenmatch.principal;
 import Alura.Screenmatch.calculos.CalculadoraDeTempo;
 import Alura.Screenmatch.calculos.FiltroRecomendacao;
 import Alura.Screenmatch.modelos.Episodio;

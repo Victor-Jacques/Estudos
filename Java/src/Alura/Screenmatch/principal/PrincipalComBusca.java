@@ -40,6 +40,5 @@ public class PrincipalComBusca {
 //        System.out.println(meuTituloOmdb);
         Titulo meuTitulo = new Titulo(meuTituloOmdb);
         System.out.println(meuTitulo);
-        System.out.println();
     }
 }

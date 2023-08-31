@@ -33,3 +33,8 @@ async function pegaArquivo (caminhoArquivo) {
 
 pegaArquivo('./arquivos/texto.md');
 pegaArquivo('./arquivos/')
+
+
+// Expressões regulares
+// \[[^[\]]*?\]
+// \(https?:\/\/[^\s?#.].[^\s]*\)
